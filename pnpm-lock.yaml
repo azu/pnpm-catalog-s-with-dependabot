@@ -1,0 +1,34 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+catalogs:
+  default:
+    lodash:
+      specifier: 4.0.0
+      version: 4.0.0
+
+importers:
+
+  .:
+    dependencies:
+      lodash:
+        specifier: 'catalog:'
+        version: 4.0.0
+
+  packages/a:
+    dependencies:
+      lodash:
+        specifier: 'catalog:'
+        version: 4.0.0
+
+packages:
+
+  lodash@4.0.0:
+    resolution: {integrity: sha512-bWpSlBobTcHYK9eUzcBYHhSBGzvSzEsxocnW5+v7p6wCRlY1icneTe2ACam3mGdAu82+RLL32cmyl7TRlJHqZw==}
+
+snapshots:
+
+  lodash@4.0.0: {}

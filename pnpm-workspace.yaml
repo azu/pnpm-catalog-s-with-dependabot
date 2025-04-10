@@ -1,4 +1,5 @@
 packages:
   - packages/*
-catalog:
-  lodash: 4.0.0
+catalogs:
+  default:
+    lodash: 4.0.0

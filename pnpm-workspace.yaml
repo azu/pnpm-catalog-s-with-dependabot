@@ -1,7 +1,5 @@
 packages:
   - packages/*
-
-# Define a catalog of version ranges.
-catalog:
-  react: ^18.3.1
-  redux: ^5.0.1
+catalogs:
+  default:
+    lodash: 4.0.0

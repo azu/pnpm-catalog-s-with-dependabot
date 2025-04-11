@@ -1,7 +1,0 @@
-{
-  "name": "@example/app",
-  "dependencies": {
-    "react": "catalog:",
-    "redux": "catalog:"
-  }
-}

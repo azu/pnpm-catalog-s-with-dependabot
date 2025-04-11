@@ -6,52 +6,29 @@ settings:
 
 catalogs:
   default:
-    react:
-      specifier: ^18.3.1
-      version: 18.3.1
-    redux:
-      specifier: ^5.0.1
-      version: 5.0.1
+    lodash:
+      specifier: 4.0.0
+      version: 4.0.0
 
 importers:
 
-  .: {}
-
-  packages/app:
+  .:
     dependencies:
-      react:
+      lodash:
         specifier: 'catalog:'
-        version: 18.3.1
-      redux:
+        version: 4.0.0
+
+  packages/a:
+    dependencies:
+      lodash:
         specifier: 'catalog:'
-        version: 5.0.1
+        version: 4.0.0
 
 packages:
 
-  js-tokens@4.0.0:
-    resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
-
-  loose-envify@1.4.0:
-    resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
-    hasBin: true
-
-  react@18.3.1:
-    resolution: {integrity: sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==}
-    engines: {node: '>=0.10.0'}
-
-  redux@5.0.1:
-    resolution: {integrity: sha512-M9/ELqF6fy8FwmkpnF0S3YKOqMyoWJ4+CS5Efg2ct3oY9daQvd/Pc71FpGZsVsbl3Cpb+IIcjBDUnnyBdQbq4w==}
+  lodash@4.0.0:
+    resolution: {integrity: sha512-bWpSlBobTcHYK9eUzcBYHhSBGzvSzEsxocnW5+v7p6wCRlY1icneTe2ACam3mGdAu82+RLL32cmyl7TRlJHqZw==}
 
 snapshots:
 
-  js-tokens@4.0.0: {}
-
-  loose-envify@1.4.0:
-    dependencies:
-      js-tokens: 4.0.0
-
-  react@18.3.1:
-    dependencies:
-      loose-envify: 1.4.0
-
-  redux@5.0.1: {}
+  lodash@4.0.0: {}
